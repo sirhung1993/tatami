@@ -1,0 +1,32 @@
+{
+  "name": "profiles",
+  "version": "1.0.0",
+  "description": "Profile sinh vien cho UDW",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha --exit --timeout 30000",
+    "test-api": "mocha --exit --timeout 20000 test/API.test.js",
+    "watch": "nodemon main.js",
+    "start": "node main.js",
+    "build-react": "cd src/react && npm install && npm run build && cd ../.."
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://hungbv2@pm.uni.topica.vn:9990/udw/profiles.git"
+  },
+  "keywords": [
+    "API",
+    "react"
+  ],
+  "author": "Bui Viet Hung",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "eosjs-ecc": "^4.0.4",
+    "express": "^4.16.3",
+    "l": "^0.6.0",
+    "mariadb": "^0.7.0",
+    "request": "^2.87.0"
+  }
+}
